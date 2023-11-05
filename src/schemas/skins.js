@@ -1,6 +1,6 @@
-const z = require('zod')
+import z from 'zod'
 
-const skinModel = z.object({
+const skinSchema = z.object({
   id: z.string(),
   name: z.string(),
   owner: z.string(),
@@ -11,10 +11,6 @@ const skinModel = z.object({
 })
 
 // Validation
-function validateSkin(object) {
-  return skinModel.safeParse(object)
-}
-
-module.exports = {
-  validateSkin
+export function validateSkin(object) {
+  return skinSchema.safeParse(object)
 }

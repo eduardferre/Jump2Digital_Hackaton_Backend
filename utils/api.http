@@ -1,8 +1,8 @@
 ### Devuelve una lista de todas las skins disponibles para comprar
-GET http://localhost:3000/skins/available
+GET http://localhost:3001/skins/available
 
 ### Permite a los usuarios adquirir una skin y guardarla en la base de datos
-POST http://localhost:3000/skins/buy
+POST http://localhost:3001/skins/buy
 Content-Type: application/json
 
 {
@@ -16,10 +16,10 @@ Content-Type: application/json
   }
 
 ### Devuelve una lista de las skins compradas por el usuario
-GET http://localhost:3000/skins/myskins/username2
+GET http://localhost:3001/skins/myskins/username1
 
 ### Permite a los usuarios cambiar el color de una skin comprada
-PUT http://localhost:3000/skins/color
+PUT http://localhost:3001/skins/color
 Content-Type: application/json
 
 {
@@ -33,7 +33,7 @@ Content-Type: application/json
 }
 
 ### Permite a los usuarios eliminar una skin comprada
-DELETE http://localhost:3000/skins/delete/1
+DELETE http://localhost:3001/skins/delete/1
 
 ### Devuelve una determinada skin
-GET http://localhost:3000/skins/getskin/2
+GET http://localhost:3001/skins/getskin/1

@@ -2,6 +2,7 @@
   "name": "jump2digital_hackaton_backend",
   "version": "1.0.0",
   "description": "Backend challenge for Jump2Digital Event",
+  "type": "module",
   "main": "app.js",
   "scripts": {
     "start": "node src/app.js",
@@ -28,6 +29,7 @@
   "dependencies": {
     "cors": "2.8.5",
     "express": "4.18.2",
+    "morgan": "1.10.0",
     "picocolors": "1.0.0",
     "zod": "3.22.4"
   },
@@ -40,7 +42,11 @@
     "rules": {
       "space-before-function-paren": [
         "error",
-        "never"
+        {
+          "anonymous": "never",
+          "named": "never",
+          "asyncArrow": "always"
+        }
       ]
     }
   }

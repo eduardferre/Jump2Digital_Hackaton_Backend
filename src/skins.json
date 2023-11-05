@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "skin1",
+    "owner": "username1",
+    "type": "tipo1",
+    "price": 25.0,
+    "color": "negro",
+    "available": true
+  },
+  {
+    "id": "2",
+    "name": "skin2",
+    "owner": "username1",
+    "type": "tipo2",
+    "price": 20.0,
+    "color": "azul",
+    "available": false
+  }
+]

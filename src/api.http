@@ -1,0 +1,39 @@
+### Devuelve una lista de todas las skins disponibles para comprar
+GET http://localhost:3000/skins/available
+
+### Permite a los usuarios adquirir una skin y guardarla en la base de datos
+POST http://localhost:3000/skins/buy
+Content-Type: application/json
+
+{
+    "id": "1",
+    "name": "skin1",
+    "owner": "username1",
+    "type": "tipo1",
+    "price": 25,
+    "color": "negro",
+    "available": true
+  }
+
+### Devuelve una lista de las skins compradas por el usuario
+GET http://localhost:3000/skins/myskins/username2
+
+### Permite a los usuarios cambiar el color de una skin comprada
+PUT http://localhost:3000/skins/color
+Content-Type: application/json
+
+{
+    "id": "2",
+    "name": "skin3",
+    "owner": "username3",
+    "type": "type1",
+    "price": 20.0,
+    "color": "black",
+    "available": true
+}
+
+### Permite a los usuarios eliminar una skin comprada
+DELETE http://localhost:3000/skins/delete/1
+
+### Devuelve una determinada skin
+GET http://localhost:3000/skins/getskin/2
